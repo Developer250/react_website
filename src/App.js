@@ -1,10 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import {NavBar} from './components/NavBar';
-import 'Bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Banner } from './components/Banner';
 import { Skills } from './components/Skills';
-
 
 
 function App() {
@@ -13,6 +12,7 @@ function App() {
     <NavBar />
     <Banner />
     <Skills />
+    <Projects />
     </div>
   );
 }
