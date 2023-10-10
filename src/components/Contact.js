@@ -3,7 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import { response } from "express";
 
-//Initializing form's fields
+//Initializing form's field
 export const Contact = () => {
    const formInitialDetails = {
     firstName: "",
