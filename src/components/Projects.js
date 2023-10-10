@@ -49,7 +49,7 @@ export const Projects = () => {
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             </p>
             <Tab.Container id="projects-tab" defaultActiveKey="first">
-              <Nav variant="pills">
+              <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                 <Nav.Item>
                   <Nav.Link eventKey="first">Active</Nav.Link>
                 </Nav.Item>
@@ -69,8 +69,7 @@ export const Projects = () => {
                       <Col key={index} sm={6} md={4}>
                         <ProjectCard
                           title={project.title}
-                          description={project.description}
-                          imgUrl={project.imgUrl}
+                          
                         />
                       </Col>
                     ))}
