@@ -14,9 +14,10 @@ export const Banner = () => {
 
     useEffect(() => {
         let ticker = setInterval(() =>{
-            ticker();
-        },delta )
-        return() => {clearInterval (ticker)};
+            tick();
+        },delta );
+
+        return () => { clearInterval (ticker) };
     }, [text])
 
     const tick = () => {
@@ -37,6 +38,7 @@ export const Banner = () => {
             setDeleting(false);
             setLoopNum(loopNum + 1);
             setDelta(500);
+            
         }
     }
 
